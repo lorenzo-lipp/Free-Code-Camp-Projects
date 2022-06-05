@@ -2,9 +2,26 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const cors = require('cors')
-const crypto = require("crypto")
+const mongoose = require('mongoose')
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 require('dotenv').config()
-const users = []
+const { Schema } = mongoose
+
+const userSchema = new Schema({
+  "_id": {type: String, required: true},
+  "count": {type: Number, required: true},
+  "username": {type: String, required: true},
+  "log": {type: Array, required: true}
+})
+const exerciseSchema = new Schema({
+  "description": {type: String, required: true},
+  "duration": {type: Number, required: true},
+  "date": {type: String, required: true}
+}, {
+    versionKey: false
+})
+const User = mongoose.model('User', userSchema)
+const Exercise = mongoose.model('Exercise', exerciseSchema)
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -14,73 +31,77 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/users', (req, res) => {
-  res.json(users)
+  User.find({})
+    .then((match) => res.json(match))
+    .catch((err) => res.json(err))
 })
 
 app.post('/api/users', (req, res) => {
-  const uniqueId = crypto.randomBytes(9).toString("hex")
-  data = { 
+  const uniqueId = new mongoose.Types.ObjectId();
+  const data = { 
     "_id": uniqueId,
     "count": 0,
     "username": req.body.username,
     "log": []
   }
-  users.push(data)
-  res.json({
-    "_id": data["_id"],
-    "username": data.username
-  })
+  const createUser = new User(data)
+  createUser.save()
+    .then((userCreated) => {
+        res.json({
+          "_id": userCreated["_id"],
+          "username": userCreated.username
+        }
+    )})
+    .catch((err) => res.json(err))
 })
 
 app.post('/api/users/:_id/exercises', (req, res) => {
-  const user = users.find(v => v["_id"] == req.params["_id"])
-  const fullDate = req.body.date ? req.body.date.split('-') : []
-  const date = fullDate[2] ? new Date(fullDate[0], parseInt(fullDate[1]) - 1, fullDate[2]) : new Date()
-  if (req.body.description != undefined && !isNaN(req.body.duration)) {
-    if (user) {
-      user.log.push({
-        description: req.body.description,
-        duration: parseInt(req.body.duration),
-        date: date.toDateString()
+  User.findOne({"_id": req.params["_id"]})
+    .then((findUser) => {
+      const fullDate = req.body.date ? req.body.date.split('-') : []
+      const date = fullDate[2] ? new Date(fullDate[0], parseInt(fullDate[1]) - 1, fullDate[2]) : new Date()
+      const createExercise = new Exercise({
+        "description": req.body.description,
+        "duration": parseInt(req.body.duration),
+        "date": date.toDateString()
       })
-      user.count++
-      res.json({
-        _id: user["_id"],
-        username: user.username,
-        description: req.body.description,
-        duration: parseInt(req.body.duration),
-        date: date.toDateString()
-      })
-    } else {
-      res.json({ error: "Invalid id" })
-    }
-  } else {
-    res.json({ error: "Missing properties"})
-  }
+      findUser.log.push(createExercise)
+      findUser.count++
+      findUser.save()
+        .then(() => {
+          res.json({
+            "_id": findUser["_id"],
+            "username": findUser.username,
+            "description": createExercise["description"],
+            "duration": createExercise["duration"],
+            "date": createExercise["date"]
+          })
+        })
+        .catch((err) => res.json(err))
+    })
+    .catch(() => res.json({ error: "Invalid id" }))
 })
 
 app.get('/api/users/:_id/logs', (req, res) => {
-  const user = users.find(v => v["_id"] == req.params["_id"])
-  const from = req.query.from || 0
-  const dateFrom = new Date(from) 
-  const to = req.query.to || Date.now()
-  const dateTo = new Date(to)
-  
-  if (user) {
-    const limit = req.query.limit || user.log.length + 1
-    const logs = user.log.filter(v => {
-      const time = new Date(v.date).getTime()
-      return time >= dateFrom.getTime() && time <= dateTo.getTime()
+  User.findOne({"_id": req.params["_id"]})
+    .then((findUser) => {
+      const from = req.query.from || 0
+      const dateFrom = new Date(from) 
+      const to = req.query.to || Date.now()
+      const dateTo = new Date(to)
+      const limit = req.query.limit || findUser.log.length + 1
+      const logs = findUser.log.filter(v => {
+        const time = new Date(v.date).getTime()
+        return time >= dateFrom.getTime() && time <= dateTo.getTime()
+      })
+      res.json({
+        _id: findUser["_id"],
+        count: findUser.count,
+        username: findUser.username,
+        log: logs.slice(0, limit)
+      })
     })
-    res.json({
-      _id: user["_id"],
-      count: user.count,
-      username: user.username,
-      log: logs.slice(0, limit)
-    })
-  } else {
-    res.json({ error: "Invalid id" })
-  }
+    .catch((err) => res.json(err))
 }) 
 
 
