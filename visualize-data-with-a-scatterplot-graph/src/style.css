@@ -1,0 +1,13 @@
+svg {
+  max-width: 800px;
+  min-width: 600px;
+  width: 100vw;
+  height: 600px;
+  
+}
+
+#graph {
+  display: flex;
+  justify-content: center;
+}
+
