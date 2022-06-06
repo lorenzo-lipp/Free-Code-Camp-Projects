@@ -1,0 +1,13 @@
+#map {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  max-width: 1300px;
+  min-width: 600px;
+  width: 100vw;
+  max-height: 780px;
+  min-height: 360px;
+  height: 60vw;
+}
