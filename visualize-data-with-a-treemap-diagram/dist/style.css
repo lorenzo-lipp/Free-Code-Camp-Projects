@@ -1,0 +1,24 @@
+svg {
+  max-width: 850px;
+  max-height: 850px;
+  min-width: 500px;
+  min-height: 500px;
+  width: 100vw;
+  height: 100vw;
+}
+
+#graph {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+button {
+  margin: 0 5px 0 5px;
+}
