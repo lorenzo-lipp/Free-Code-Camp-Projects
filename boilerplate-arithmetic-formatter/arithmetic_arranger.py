@@ -43,7 +43,4 @@ def arithmetic_arranger(problems, showAnswers=False):
   else:
     arranged_problems = "\n".join(arranged_problems_list[:-1])
   
-  print(list_of_problems)
-  print(arranged_problems)
-  
   return arranged_problems
