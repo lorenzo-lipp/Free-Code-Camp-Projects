@@ -4,4 +4,4 @@ This is the boilerplate for the Arithmetic Formatter project. Instructions for b
 
 # Live Version
 
-https://replit.com/@lorenzo-lipp/boilerplate-arithmetic-formatter
+https://colab.research.google.com/drive/1-z9gFkLNqbgyoJwcJ2IjPB2U6CUmcwkJ?usp=sharing
