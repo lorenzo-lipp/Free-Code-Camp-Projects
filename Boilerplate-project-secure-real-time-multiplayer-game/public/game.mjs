@@ -59,7 +59,7 @@ move();
 function move() {
   setTimeout(() => {
     let didMove = false;
-    let speed = Object.keys(keysPressed).filter(v => keysPressed[v] === true).length > 1 ? 4 : 8;
+    let speed = Object.keys(keysPressed).filter(v => keysPressed[v] === true).length > 1 ? 5 : 10;
     move();
 
     for (let key in keysPressed) {
