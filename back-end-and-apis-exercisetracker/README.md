@@ -10,4 +10,4 @@ https://boilerplate-project-exercisetracker.lorenzo-lipp.repl.co
 
 # Requirements
 
-![image](https://user-images.githubusercontent.com/91420499/179022690-b01402b8-f5db-465a-869a-4b653213a3aa.png)
+![image](https://user-images.githubusercontent.com/91420499/179023281-a6d6c40e-57b8-4bb7-8f97-06b603db2d9b.png)
