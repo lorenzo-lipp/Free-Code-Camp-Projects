@@ -17,7 +17,7 @@ const stockSchema = new Schema({
 const Stock = mongoose.model('Stock', stockSchema);
 
 async function getStock(stock) {
-  if (stock.includes("TESTSTOCK")) return [stock, 0]; // Fake stock only for tests.
+  if (stock.includes("TESTSTOCK")) return [stock, 1]; // Fake stock only for tests.
   
   const response = await fetch(`https://stock-price-checker-proxy.freecodecamp.rocks/v1/stock/${stock}/quote`);
   const { symbol, latestPrice } = await response.json();
