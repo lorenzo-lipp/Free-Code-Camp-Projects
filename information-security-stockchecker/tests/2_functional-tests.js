@@ -7,7 +7,7 @@ let likes;
 chai.use(chaiHttp);
 
 suite('Functional Tests', function() {
-  test('Viewing one stock: GET request to /api/stock-prices/', function() {
+  test('Viewing one stock: GET request to /api/stock-prices/', function(done) {
     chai.request(server)
       .get('/api/stock-prices?stock=GOOG')
       .end((err, res) => {
@@ -19,10 +19,11 @@ suite('Functional Tests', function() {
         assert.isNumber(res.body.stockData.price);
         assert.property(res.body.stockData, "likes");
         assert.isNumber(res.body.stockData.likes);
+        done();
       });
   });
 
-  test('Viewing one stock and liking it: GET request to /api/stock-prices/', function() {
+  test('Viewing one stock and liking it: GET request to /api/stock-prices/', function(done) {
     chai.request(server)
       .get('/api/stock-prices?stock=TESTSTOCK&like=true')
       .end((err, res) => {
@@ -36,10 +37,11 @@ suite('Functional Tests', function() {
         assert.isNumber(res.body.stockData.likes);
         assert.isAbove(res.body.stockData.likes, 0);
         likes = res.body.stockData.likes;
+        done();
       });
   });
 
-  test('Viewing the same stock and liking it again: GET request to /api/stock-prices/', function() {
+  test('Viewing the same stock and liking it again: GET request to /api/stock-prices/', function(done) {
     chai.request(server)
       .get('/api/stock-prices?stock=TESTSTOCK&like=true')
       .end((err, res) => {
@@ -52,10 +54,11 @@ suite('Functional Tests', function() {
         assert.property(res.body.stockData, "likes");
         assert.isNumber(res.body.stockData.likes);
         assert.equal(res.body.stockData.likes, likes);
+        done();
       });
   });
 
-  test('Viewing two stocks: GET request to /api/stock-prices/', function() {
+  test('Viewing two stocks: GET request to /api/stock-prices/', function(done) {
     chai.request(server)
       .get('/api/stock-prices?stock=GOOG&stock=MSFT')
       .end((err, res) => {
@@ -74,10 +77,11 @@ suite('Functional Tests', function() {
         assert.property(res.body.stockData[1], "rel_likes");
         assert.isNumber(res.body.stockData[0].rel_likes);
         assert.isNumber(res.body.stockData[1].rel_likes);
+        done();
       });
   });
 
-  test('Viewing two stocks and liking them: GET request to /api/stock-prices/', function() {
+  test('Viewing two stocks and liking them: GET request to /api/stock-prices/', function(done) {
     chai.request(server)
       .get('/api/stock-prices?stock=TESTSTOCK&stock=TESTSTOCK2&like=true')
       .end((err, res) => {
@@ -96,8 +100,9 @@ suite('Functional Tests', function() {
         assert.property(res.body.stockData[1], "rel_likes");
         assert.isNumber(res.body.stockData[0].rel_likes);
         assert.isNumber(res.body.stockData[1].rel_likes);
-        assert.isAbove(res.body.stockData[0].rel_likes, 0);
-        assert.isAbove(res.body.stockData[1].rel_likes, 0);
+        assert.equal(res.body.stockData[0].rel_likes, 0);
+        assert.equal(res.body.stockData[1].rel_likes, 0);
+        done();
       });
   })
 });
