@@ -4,7 +4,7 @@ Project based on: https://www.freecodecamp.org/learn/data-visualization/data-vis
 
 # Live Version
 
-https://codepen.io/lorenzo-lipp/pen/rNJjRXz
+https://codepen.io/lorenzo-lipp/full/rNJjRXz
 
 ![image](https://user-images.githubusercontent.com/91420499/179084066-35ef260f-cbc5-4234-ae9d-73da3f28932e.png)
 
