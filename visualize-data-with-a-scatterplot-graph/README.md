@@ -1,4 +1,13 @@
-# Free Code Camp - Visualize Data with a Scatterplot Graph
+# Visualize Data with a Scatterplot Graph
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/lorenzo-lipp/pen/LYQZBOa](https://codepen.io/lorenzo-lipp/pen/LYQZBOa).
+Project based on: https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph
 
+# Live Version
+
+https://codepen.io/lorenzo-lipp/full/LYQZBOa
+
+![image](https://user-images.githubusercontent.com/91420499/179117681-858bb91a-65ec-4e90-aba6-6e7344f422df.png)
+
+# Requirements
+
+![image](https://user-images.githubusercontent.com/91420499/179117598-635d0004-6fbe-4bda-97be-b377f56d97e6.png)
