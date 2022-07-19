@@ -11,7 +11,7 @@
 - galaxy_id FOREIGN KEY
 - name VARCHAR(30) NOT NULL
 - diameter_in_km INT
-- light_years_from_earth NUMERIC(5, 8)
+- light_years_from_earth NUMERIC(10, 2)
 
 # GALAXY
 - galaxy_id SERIAL PRIMARY KEY
