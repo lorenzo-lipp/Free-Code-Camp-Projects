@@ -15,3 +15,7 @@ Project based on: https://www.freecodecamp.org/learn/relational-database/build-a
 ![image](https://user-images.githubusercontent.com/91420499/181590826-29b6178e-8526-486d-a74c-9d444d3b4fef.png)
 
 ![image](https://user-images.githubusercontent.com/91420499/181595677-ea08ac4d-0cc8-4938-96db-d5ba965370b7.png)
+
+# Requirements
+
+![image](https://user-images.githubusercontent.com/91420499/181596279-1e0ff73b-5b53-422f-a97f-8ee3765fffcd.png)
