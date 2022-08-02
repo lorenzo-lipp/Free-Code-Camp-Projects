@@ -21,9 +21,9 @@ function quickSort(array) {
         biggerThanPivot = quickSort(biggerThanPivot);
     }
 
-    array = smallerThanPivot.concat(equalToPivot).concat(biggerThanPivot);
+    array = [...smallerThanPivot, ...equalToPivot, ...biggerThanPivot];
 
     return array;
 }
 
-quickSort([5,26,1,2,3,1])
+quickSort([5,26,1,2,3,1]);
