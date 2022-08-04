@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="viewport" value="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Feedback Form</h1>
+        </header>
+        <main id="main">
+            <p id="description">Thank you for taking the time to help us improve!</p>
+            <form id="survey-form" onSubmit="return false">
+            
+            <fieldset>
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name here" required>
+            </fieldset>
+            
+            <fieldset>
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email here" required>
+            </fieldset>
+            
+            <fieldset>
+                <label id="number-label" for="age">Age (optional):</label>
+                <input id="number" type="number" name="age" placeholder="Enter your age here" min="1" max="130">
+            </fieldset>
+
+            <fieldset>
+                <label id="number-label" for="tel">Phone Number (optional):</label>
+                <input id="tel" type="tel" name="tel" placeholder="Enter your phone number here">
+            </fieldset>
+            
+            <fieldset>
+                <label id="dropdown-label" for="dropdown">What type of feedback are you giving?</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option disabled selected value="">Select an option</option>
+                    <option value="bug-report">Bug report</option>
+                    <option value="comment">Just a comment</option>
+                    <option value="missing-feature">Missing feature</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label id="radio-buttons-label" for="radio-buttons">How can we contact you?</label>
+                <div class="radio">
+                    <label for="contact_no">Don't want to be contacted</label>
+                    <input id="contact_no" type="radio" name="radio-set" value="no" checked required>
+                </div>
+                <div class="radio">
+                    <label for="contact_email">Email</label>
+                    <input id="contact_email" type="radio" name="radio-set" value="email">
+                </div>
+                <div class="radio">
+                    <label for="contact_phone">Phone</label>
+                    <input id="contact_phone" type="radio" name="radio-set" value="phone">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <label id="checkboxes-label" for="checkboxes">What would you like to see improved?</label>
+                <div class="checkbox">
+                    <label for="box1">Content</label>
+                    <input id="box1" type="checkbox" name="checkbox-set" value="content">
+                </div>
+                <div class="checkbox">
+                    <label for="box2">Videos</label>
+                    <input id="box2" type="checkbox" name="checkbox-set" value="videos">
+                </div>
+                <div class="checkbox">
+                    <label for="box3">Forum</label>
+                    <input id="box3" type="checkbox" name="checkbox-set" value="forum">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <textarea placeholder="Enter your comment here..." minlength="8"></textarea>
+            </fieldset>
+            
+            <button id="submit" class="submit" type="submit">Submit</button>
+            </form>
+        </main>
+        <footer class="footer"></footer>
+    </body>
+</html>
