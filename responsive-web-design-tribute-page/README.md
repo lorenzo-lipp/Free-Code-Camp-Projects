@@ -1,13 +1,13 @@
 # Tribute Page
 
-Project based on: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
+Project based on: https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page
 
 # Live Version
 
-https://1k6x5j.csb.app/
+https://7h73ti.csb.app/
 
-![image](https://user-images.githubusercontent.com/91420499/184055598-472d05c0-f887-4870-adce-c2799df6b524.png)
+![image](https://user-images.githubusercontent.com/91420499/184056278-1d5da979-11ba-4a69-b8cd-59b1aaeb468c.png)
 
 # Requirements
 
-![image](https://user-images.githubusercontent.com/91420499/184055697-31a0225f-d3ec-4764-9233-938023407432.png)
+![image](https://user-images.githubusercontent.com/91420499/184056168-aa26a608-e1ea-4837-9e3e-df1a2937f47e.png)
