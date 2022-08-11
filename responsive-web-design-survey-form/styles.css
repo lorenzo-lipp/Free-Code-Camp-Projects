@@ -116,6 +116,11 @@ input[type="checkbox"] {
     width: 60%;
 }
 
+#submit:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
 /* MARGIN BOTTOM */
 
 .footer {
