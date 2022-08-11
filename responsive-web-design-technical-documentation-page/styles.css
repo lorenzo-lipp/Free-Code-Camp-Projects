@@ -1,0 +1,129 @@
+/* CONTAINERS */
+
+html {
+    background-color: rgb(33, 37, 43);
+    color: rgb(201, 201, 201);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-doc {
+    margin-left: 330px;
+}
+
+pre {
+    background-color: rgb(40, 44, 52);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(171, 178, 191);
+}
+
+/* TEXT */
+
+a {
+    text-decoration: none;
+    color: rgb(194, 108, 106);
+}
+
+header h2 {
+    font-size: 1.8rem;
+    color: rgb(224, 224, 224);
+}
+
+p {
+    font-size: 1rem;
+    text-indent: 30px;
+}
+
+pre {
+    font-size: 0.9rem;
+}
+
+span.purple {
+    color: rgb(198, 120, 188);
+}
+
+span.green {
+    color: rgb(124, 195, 112);
+}
+
+span.blue {
+    color: rgb(60, 164, 228);
+}
+
+span.yellow {
+    color: rgb(221, 215, 19);
+}
+
+span.orange {
+    color: rgb(209, 154, 102);
+}
+
+span.red {
+    color: rgb(194, 108, 106);
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.nav-bar a {
+    display: block;
+    font-size: 20px;
+    text-indent: 10px;
+    color: rgb(167, 167, 167);
+}
+
+#nav-title {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 500;
+    text-indent: 0;
+}
+
+/* */
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+    }
+
+    .nav-bar {
+        position: static;
+    }
+
+
+    #main-doc {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
