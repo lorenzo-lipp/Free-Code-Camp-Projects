@@ -185,6 +185,7 @@ h2 {
 
 /* Search bar */
 .search-bar {
+    display: none;
     margin-right: 30px;
 }
 
