@@ -1,0 +1,73 @@
+:root {
+    --bkg-color: grey;
+}
+
+body {
+    transition: all 0.7s ease;
+    background-color: var(--bkg-color);
+    color: var(--bkg-color) !important;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#quote-box {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 30px 40px 30px 40px;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+#quote-text {
+    display: flex;
+    align-items: bottom;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#quote-text i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+#text {
+    font-size: 25px;
+}
+
+#author {
+    text-align: right;
+}
+
+#quote-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorful {
+    background-color: var(--bkg-color) !important;
+    color: white !important;
+    fill: white;
+}
+
+.blink {
+    justify-content: center !important;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
