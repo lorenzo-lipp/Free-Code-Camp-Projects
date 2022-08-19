@@ -1,0 +1,154 @@
+:root {
+  --drum-pad-color: rgb(66, 69, 78);
+  --pad-color: rgb(55, 56, 61);
+  --pad-border: rgb(119, 131, 150);
+  --power-button-color: rgb(38, 39, 43);
+  --display-color: rgb(235, 236, 250);
+  --text-color: whitesmoke;
+}
+
+.body {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: var(--drum-pad-color);
+}
+
+.drum-pad {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 5px solid var(--pad-border);
+  border-radius: 3px;
+  background-color: var(--pad-color);
+  color: var(--text-color);
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: border .05s;
+  
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.drum-pad.pressed {
+  border: 2px solid var(--pad-border);
+}
+
+#Heater-1 {
+  top: 10px;
+  left: 30px;
+}
+
+#Heater-2 {
+  top: 10px;
+  left: 140px;
+}
+
+#Heater-3 {
+  top: 10px;
+  left: 250px;
+}
+
+#Heater-4 {
+  top: 10px;
+  left: 360px;
+}
+
+#Clap {
+  top: 10px;
+  left: 470px;
+}
+
+#OpenHH {
+  top: 120px;
+  left: 140px;
+}
+
+#KicknHat {
+  top: 120px;
+  left: 250px;
+}
+
+#Kick {
+  top: 120px;
+  left: 360px;
+}
+
+#ClosedHH {
+  top: 120px;
+  left: 470px;
+}
+
+.power-container {
+  position: absolute;
+  top: 120px;
+  left: 65px;
+  background-color: black;
+  width: 30px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 8px solid var(--pad-color);
+}
+
+.powerButton {
+  position: absolute;
+  top: 3px;
+  left: -18px;
+  width: 50px;
+  height: 30px;
+  background-color: var(--power-button-color);
+  transition: top .5s;
+}
+
+.powerButton.off {
+  top: 100px;
+}
+
+.power-container p {
+  position: absolute;
+  top: 130px;
+  left: -15px;
+  color: var(--display-color);
+  font-family: Arial;
+  font-weight: bold;
+  
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#display {
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  top: 245px;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--display-color);
+  border-radius: 40px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 26px;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
