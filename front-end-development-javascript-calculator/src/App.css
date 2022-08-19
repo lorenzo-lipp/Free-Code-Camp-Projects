@@ -1,0 +1,177 @@
+:root {
+    --equal-color: #3354B6;
+    --num-color: #6A6A6A;
+    --operator-color: #3C3D3C;
+    --clear-color: #FF4242;
+    --calculator-color: rgb(87, 92, 94);
+    --screen-color: rgb(156, 204, 102);
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 480px;
+    background-color: var(--calculator-color);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#screen {
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    background-color: var(--screen-color);
+    color: black;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+#screen p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 20px;
+    width: 300px;
+    line-height: 20px;
+}
+
+#buttons {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#buttons div {
+    font-weight: bold;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    position: absolute;
+    user-select: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear {
+    left: 0;
+    top: 10px;
+    width: 150px;
+    height: 75px;
+    background-color: var(--clear-color);
+}
+
+#divide, #multiply, #subtract, #add, #decimal {
+    width: 70px;
+    height: 75px;
+    background-color: var(--operator-color);
+}
+
+#divide {
+    left: 155px;
+    top: 10px;
+}
+
+#multiply {
+    left: 230px;
+    top: 10px;
+}
+
+#subtract {
+    left: 230px;
+    top: 90px;
+}
+
+#add {
+    left: 230px;
+    top: 170px;
+}
+
+#equals {
+    width: 70px;
+    height: 155px;
+    background-color: var(--equal-color);
+    left: 230px;
+    top: 250px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+    width: 70px;
+    height: 75px;
+    background-color: var(--num-color);
+}
+
+#seven {
+    left: 0;
+    top: 90px;
+}
+
+#four {
+    left: 0;
+    top: 170px;
+}
+
+#one {
+    left: 0;
+    top: 250px;
+}
+
+#zero {
+    left: 0;
+    top: 330px;
+    width: 150px;
+    height: 75px;
+    background-color: var(--num-color);
+}
+
+#eight {
+    left: 78px;
+    top: 90px;
+}
+
+#five {
+    left: 78px;
+    top: 170px;
+}
+
+#two {
+    left: 78px;
+    top: 250px;
+}
+
+#nine {
+    left: 155px;
+    top: 90px;
+}
+
+#six {
+    left: 155px;
+    top: 170px;
+}
+
+#three {
+    left: 155px;
+    top: 250px;
+}
+
+#decimal {
+    left: 155px;
+    top: 330px;
+}
