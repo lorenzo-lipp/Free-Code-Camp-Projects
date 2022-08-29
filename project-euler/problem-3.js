@@ -7,9 +7,9 @@ What is the largest prime factor of the given number?
 
 function largestPrimeFactor(number) {
     const primeFactors = [];
-    let primeFactorsSum = 0;
+    let primeFactorsProd = 1;
     let n = 1;
-    if (number % 2 === 0) return 2;
+    if (number % 2 === 0) primeFactors.push(2);
 
     while(true) {
         let len = primeFactors.length
@@ -25,10 +25,10 @@ function largestPrimeFactor(number) {
 
             if (isPrime !== false) {
                 primeFactors.push(n);
-                primeFactorsSum += n;
+                primeFactorsProd *= n;
             }
         }
-        if (len > 0 && n >= number / primeFactorsSum) break;
+        if (n >= number / primeFactorsProd) break;
     }
 
     return primeFactors[primeFactors.length - 1];
