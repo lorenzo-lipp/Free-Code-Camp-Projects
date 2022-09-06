@@ -1,0 +1,123 @@
+:root {
+  --text-color: whitesmoke;
+  --min-color: rgb(51, 94, 224);
+  --max-color: rgb(209, 14, 14);
+  --background-color: rgba(48, 58, 68, 0.4);
+  --body-color: rgb(30, 32, 46);
+  --credits-color: rgb(174, 185, 196);
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-color);
+}
+
+.loading {
+  font-size: 48px;
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.temperature-card {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.temperature img {
+  width: 50px;
+  height: 50px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.status {
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.min {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--min-color);
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 125px;
+}
+
+.max {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--max-color);
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 125px;
+}
+
+.min p, .max p {
+  margin: 0;
+}
+
+.now {
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.description, .city {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.credits {
+  color: var(--credits-color);
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  top: 12px;
+  left: 43%;
+}
+
+.credits a {
+  color: var(--credits-color);
+  text-decoration: none;
+}
+
+.change-measure-unit {
+  background-color: transparent;
+  border: 1px solid var(--credits-color);
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--credits-color);
+  font-weight: bold;
+  position: absolute;
+  top: 4%;
+  left: 83%;
+  cursor: pointer;
+  width: 80px;
+}
