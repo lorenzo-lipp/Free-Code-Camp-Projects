@@ -1,0 +1,150 @@
+:root {
+    --background-color: #4e6657;
+    --result-color: #a7c5acad;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.search-bar {
+    position: absolute;
+    display: flex;
+    left: calc(50% + 25px);
+    transform: translate(-50%, -50%);
+    transition: top 2s;
+}
+
+.search-bar.no-search {
+    top: 50vh;
+}
+
+.search-bar.active {
+    top: clamp(52px, 8.5vh + 26px, 1000px);
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 2s;
+    text-shadow: -2px 1px #000000ad, 1px 1px #000000ad;
+}
+
+h1::first-letter {
+    font-size: 48px;
+    margin-right: -4px;
+}
+
+.search-bar.no-search+h1 {
+    top: calc(50vh - 52px);
+}
+
+.search-bar.active+h1 {
+    top: clamp(25px, 8.5vh - 26px, 1000px);
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+h1:hover span {
+    display: none;
+}
+
+h1:hover a::before {
+    content: "Random Article";
+    cursor: pointer;
+}
+
+.search-bar button {
+    position: relative;
+    background-color: transparent;
+    left: -25px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: left 0.7s 0.3s;
+}
+
+.search-bar input {
+    max-width: 500px;
+    width: 0vw;
+    padding: 0px;
+    pointer-events: none;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: width 1s ease-in-out;
+}
+
+.search-bar input.active {
+    padding: 10px 40px 10px 20px;
+    width: 80vw;
+    pointer-events: auto;
+}
+
+.search-bar input.active+button {
+    left: -50px;
+}
+
+.results {
+    margin-top: 17vh;
+    opacity: 0;
+    transition: opacity 1.5s 1s, margin-top 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results.show {
+    opacity: 100%;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000ad;
+    padding: 20px 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: var(--result-color);
+    min-height: 100px;
+    max-width: 850px;
+    min-width: min(600px, 90%);
+    width: 80%;
+    color: #0f1116;
+}
+
+.search-result h2 {
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    font-size: 32px;
+}
+
+.search-result p {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0px 0px 0px;
+}
+
+.search-result .searchmatch {
+    font-weight: bold;
+}
+
+.search-result button {
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    background-color: #ffffff52;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
