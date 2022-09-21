@@ -1,0 +1,129 @@
+:root {
+  --wrong-color: #ff0505d4;
+  --buttons-color: #4545bf;
+  --active-color: #99adff;
+  --stroke-color: #494949;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: fit-content;
+  font-family: arial;
+}
+
+.region {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 2px solid var(--stroke-color);
+}
+
+.cell {
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  font-size: 36px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: var(--stroke-color);
+}
+
+.cell.wrong {
+  color: var(--wrong-color);
+}
+
+.region .cell:nth-child(1) {
+  border-top: none;
+  border-left: none;
+}
+
+.region .cell:nth-child(2) {
+  border-top: none;
+}
+
+.region .cell:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+
+.region .cell:nth-child(4) {
+  border-left: none;
+}
+
+.region .cell:nth-child(6) {
+  border-right: none;
+}
+
+.region .cell:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.region .cell:nth-child(8) {
+  border-bottom: none;
+}
+
+.region .cell:nth-child(9) {
+  border-right: none;
+  border-bottom: none;
+}
+
+.active {
+  background-color: var(--active-color);
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0;
+  color: var(--buttons-color);
+}
+
+.key svg {
+  fill: var(--buttons-color);
+  width: 26px;
+  height: 30px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .center {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+@media (max-width: 560px) {
+  .center {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
