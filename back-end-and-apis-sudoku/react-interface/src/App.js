@@ -17,6 +17,7 @@ export default function App() {
         setGame(data.game);
         setSolution(data.solution);
         setIsLoading(false);
+        window.dispatchEvent(new Event('resize'));
       })
   }, [])
   

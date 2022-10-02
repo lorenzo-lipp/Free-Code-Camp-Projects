@@ -13,7 +13,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(2);
 }
 
 .board {
@@ -114,16 +113,4 @@ body {
 
 .visible {
   opacity: 1;
-}
-
-@media (max-width: 750px) {
-  .center {
-    transform: translate(-50%, -50%) scale(1.5);
-  }
-}
-
-@media (max-width: 560px) {
-  .center {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
