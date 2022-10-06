@@ -1,0 +1,244 @@
+:root {
+    --background-color: #427a4c;
+    --nav-color: #599764;
+    --card-color: #20694d;
+    --text-color: #bcf2c6;
+    --icon-color: #bcf2c699;
+    --hr-color: #bcf2c655;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    color: var(--text-color);
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 15px 10px 15px;
+}
+
+.data .preview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    width: 80vw;
+    min-height: 500px;
+    border: 2px solid white;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    margin: 0px 25px 25px 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.data .preview img {
+    height: 350px;
+    width: 250px;
+    border: 2px solid white;
+    -webkit-user-drag: none;
+    margin-top: 33px;
+}
+
+.data .text {
+    margin: auto 0;
+    width: 100%;
+}
+
+.data .preview h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.data .preview p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    background-color: var(--nav-color);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    margin: 0px min(60px, 8vw);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--text-color);
+    font-size: 36px;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+input[type="text"] {
+    max-width: 800px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 40px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+}
+
+input[type="text"]+.data {
+    margin-top: 40px;
+}
+
+label {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 26px;
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: var(--nav-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
+
+.response {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.loading {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    animation-name: fade-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.warning {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+textarea {
+    width: 80%;
+    max-width: 450px;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    height: 150px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--hr-color);
+}
+
+.data .preview a {
+    border: none;
+}
+
+.data .preview a p:hover {
+    color: white;
+}
+
+.data .preview .comment {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.data .preview .comment::before {
+    content: '" ';
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.data .preview .comment::after {
+    content: ' "';
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.edit {
+    position: absolute;
+    top: 5px;
+    left: 42%;
+    width: 100%;
+}
+
+.edit svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--icon-color);
+}
+
+.edit svg:hover {
+    fill: white;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
