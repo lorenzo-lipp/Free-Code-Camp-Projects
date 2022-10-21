@@ -87,6 +87,8 @@ main {
 }
 
 .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   pointer-events: auto;
   width: 20px;
   height: 20px;
