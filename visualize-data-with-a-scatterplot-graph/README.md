@@ -4,9 +4,10 @@ Project based on: https://www.freecodecamp.org/learn/data-visualization/data-vis
 
 # Live Version
 
-https://codepen.io/lorenzo-lipp/full/LYQZBOa
+https://scatterplot-graph.lorenzo-lipp.repl.co/
 
-![image](https://user-images.githubusercontent.com/91420499/179117681-858bb91a-65ec-4e90-aba6-6e7344f422df.png)
+![image](./images/preview-1.png)
+![image](./images/preview-2.png)
 
 # Requirements
 
