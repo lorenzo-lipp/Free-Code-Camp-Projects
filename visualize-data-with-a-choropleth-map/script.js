@@ -1,56 +1,53 @@
-const MAP = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json'
-const EDUCATION = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json'
+const MAP = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json';
+const EDUCATION = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json';
 const COLORS = [
-    'rgb(183, 209, 255)',
-    'rgb(141, 175, 255)',
-    'rgb(93, 126, 255)',
-    'rgb(36, 56, 255)',
-    'rgb(32, 0, 255)',
-    'rgb(32, 0, 163)',
-    'rgb(29, 0, 102)'
-]
+    'rgb(232, 245, 196)',
+    'rgb(200, 232, 182)',
+    'rgb(135, 206, 186)',
+    'rgb(107, 195, 190)',
+    'rgb(56, 143, 185)',
+    'rgb(50, 128, 182)',
+    'rgb(42, 78, 156)'
+];
 
 Promise.all([d3.json(MAP), d3.json(EDUCATION)])
     .then(([dataMap, dataEducation]) => {
-        //document.getElementById('map').innerHTML = JSON.stringify(dataEducation)
-        const w = 1000
-        const h = 600
-        const path = d3.geoPath()
+        const w = 1000;
+        const h = 600;
+        
+        const path = d3.geoPath();
+        const svg = d3.select('svg');
+
         const legendScale = d3.scaleLinear()
             .domain([3, 66])
-            .range([631, 841])
-        const legend = [3, 12, 21, 30, 39, 48, 57, 66]
-        const legendAxis = d3.axisBottom(legendScale).tickFormat((d) => d + "%").tickValues(legend)
+            .range([631, 841]);
+        const legend = [3, 12, 21, 30, 39, 48, 57, 66];
+        const legendAxis = d3.axisBottom(legendScale).tickFormat((d) => d + "%").tickValues(legend);
+
         const TOOLTIP = d3.select('#map')
             .append('div')
-            .attr('id', 'tooltip')
-            .style('display', 'flex')
-            .style('position', 'absolute')
-            .style('opacity', 0)
-            .style('padding', '5px')
-            .style('border', 'solid')
-            .style('border-width', '2px')
-            .style('border-radius', '5px')
-            .style('background-color', 'white')
-            .style('text-align', 'center')
-        const mouseover = (event) => {
-            TOOLTIP.style('opacity', 1)
-            d3.select(event.target).raise().style('stroke-width', '1px')
+            .attr('id', 'tooltip');
+        
+        const mouseover = ({ target }) => {
+            TOOLTIP.style('display', 'unset');
+            d3.select(target).raise().style('stroke-width', '1px');
+        }
+        const mouseleave = ({ target }) => {
+            TOOLTIP.style('display', 'none');
+            d3.select(target).style('stroke-width', '0px');
         }
         const mousemove = (event) => {
-            const target = d3.select(event.target)
+            const target = d3.select(event.target);
             TOOLTIP.html(`
-            ${target.attr('data-area')}, ${target.attr('data-state')}: ${target.attr('data-education')}%`)
-                .attr('data-education', target.attr('data-education'))
-                .style("top", (event.pageY - 25) + "px")
-                .style("left", (event.pageX + 50) + "px")
+                <p class="state">${target.attr('data-area')}, ${target.attr('data-state')}</p>
+                <p class="percentage">${target.attr('data-education')}%</p>
+            `).attr('data-education', target.attr('data-education'))
+                .style("top", (event.pageY + 50) + "px")
+                .style("left", event.pageX + "px");
         }
-        const mouseleave = (event) => {
-            TOOLTIP.style('opacity', 0)
-            d3.select(event.target).style('stroke-width', '0px')
-        }
-        d3.select('svg')
-            .append('g')
+
+        console.log(dataEducation)
+        svg.append('g')
             .selectAll('path')
             .data(topojson.feature(dataMap, dataMap.objects.counties).features)
             .enter()
@@ -59,12 +56,12 @@ Promise.all([d3.json(MAP), d3.json(EDUCATION)])
             .attr('class', 'county')
             .attr('data-fips', d => d.id)
             .attr('data-education', d => {
-                let obj = dataEducation.filter(e => e.fips == d.id)
-                return obj[0] ? obj[0].bachelorsOrHigher : 'No data'
+                const obj = dataEducation.find(v => v.fips == d.id);
+                return obj ? obj.bachelorsOrHigher : 'No data';
             })
             .attr('data-area', d => {
-                let obj = dataEducation.filter(e => e.fips == d.id)
-                return obj[0] ? obj[0].area_name : ''
+                const obj = dataEducation.find(v => v.fips == d.id);
+                return obj ? obj.area_name : '';
             })
             .attr('data-state', d => {
                 let obj = dataEducation.filter(e => e.fips == d.id)
@@ -72,32 +69,27 @@ Promise.all([d3.json(MAP), d3.json(EDUCATION)])
             })
             .attr('fill', d => {
                 let obj = dataEducation.filter(e => e.fips == d.id)
-                return obj[0] ? setColor(obj[0]) : 'gray'
+                return obj[0] ? getColor(obj[0]) : 'gray'
             })
-            .style('stroke', 'white')
-            .style('stroke-width', '0px')
             .on('mouseover', mouseover)
             .on('mousemove', mousemove)
-            .on('mouseleave', mouseleave)
+            .on('mouseleave', mouseleave);
         
-        d3.select('svg')
-            .append('text')
+        svg.append('text')
             .attr('id', 'title')
             .text('United States Educational Attainment')
             .style('font-size', '26px')
             .attr('x', (w - d3.select('#title').node().getBBox().width) / 2)
             .attr('y', 30)
         
-        d3.select('svg')
-            .append('text')
+        svg.append('text')
             .attr('id', 'description')
             .text(`Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)`)
             .style('font-size', '14px')
             .attr('x', (w - d3.select('#description').node().getBBox().width) / 2)
             .attr('y', 44)
 
-        d3.select('svg')
-            .append('g')
+        svg.append('g')
             .attr('id', 'legend')
             .selectAll('rect')
             .data(COLORS)
@@ -116,7 +108,7 @@ Promise.all([d3.json(MAP), d3.json(EDUCATION)])
             .call(legendAxis)
     })
 
-function setColor(obj) {
+function getColor(obj) {
     if (obj.bachelorsOrHigher >= 57) {
         return COLORS[6]
     } else if (obj.bachelorsOrHigher >= 48) {

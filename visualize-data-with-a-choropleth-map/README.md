@@ -4,9 +4,10 @@ Project based on: https://www.freecodecamp.org/learn/data-visualization/data-vis
 
 # Live Version
 
-https://codepen.io/lorenzo-lipp/full/rNJjRXz
+https://choropleth-map.lorenzo-lipp.repl.co/
 
-![image](https://user-images.githubusercontent.com/91420499/179084066-35ef260f-cbc5-4234-ae9d-73da3f28932e.png)
+![image](./images/preview-1.png)
+![image](./images/preview-2.png)
 
 # Requirements
 
