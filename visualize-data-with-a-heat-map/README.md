@@ -4,9 +4,10 @@ Project based on: https://www.freecodecamp.org/learn/data-visualization/data-vis
 
 # Live Version
 
-https://codepen.io/lorenzo-lipp/full/NWybQXg
+https://heat-map.lorenzo-lipp.repl.co
 
-![image](https://user-images.githubusercontent.com/91420499/179084675-65ac7c69-ec53-4268-b9b1-bc3e333b8b72.png)
+![image](./images/preview-1.png)
+![image](./images/preview-2.png)
 
 # Requirements
 
