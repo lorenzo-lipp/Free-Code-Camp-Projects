@@ -4,7 +4,7 @@ Project based on: https://www.freecodecamp.org/learn/2022/responsive-web-design/
 
 # Live Version
 
-https://9tjo84.csb.app/
+https://product-landing-page.lorenzo-lipp.repl.co/
 
 ![image](images/preview.jpg)
 

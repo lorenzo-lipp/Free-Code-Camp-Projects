@@ -4,7 +4,7 @@ Project based on: https://www.freecodecamp.org/learn/front-end-development-libra
 
 # Live Version
 
-https://s9hjj3.csb.app/
+https://random-quote-machine.lorenzo-lipp.repl.co/
 
 ![image](images/preview.jpg)
 

@@ -11,4 +11,4 @@ https://scatterplot-graph.lorenzo-lipp.repl.co/
 
 # Requirements
 
-![image](https://user-images.githubusercontent.com/91420499/179117598-635d0004-6fbe-4bda-97be-b377f56d97e6.png)
+![image](./images/requirements.png)

@@ -4,10 +4,10 @@ Project based on: https://www.freecodecamp.org/learn/2022/responsive-web-design/
 
 # Live Version
 
-https://1k6x5j.csb.app/
+https://survey-form.lorenzo-lipp.repl.co/
 
-![image](https://user-images.githubusercontent.com/91420499/184055598-472d05c0-f887-4870-adce-c2799df6b524.png)
+![image](./images/preview.png)
 
 # Requirements
 
-![image](https://user-images.githubusercontent.com/91420499/184055697-31a0225f-d3ec-4764-9233-938023407432.png)
+![image](./images/requirements.png)
