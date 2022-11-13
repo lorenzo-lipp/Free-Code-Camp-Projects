@@ -617,6 +617,18 @@ Link to the project: https://line-chart.lorenzo-lipp.repl.co/
 
 <hr />
 
+## Multiline Chart
+
+- This D3 graph allows you to visualize data with a multiline chart.
+
+Technologies used: Javascript, D3
+
+Link to the project: https://multiline-chart.lorenzo-lipp.repl.co/
+
+![image](./visualize-data-with-a-multiline-chart/images/preview-1.png)
+
+<hr />
+
 ## Radar Chart
 
 - This ChartJS graph allows you to visualize data with a radar chart.
