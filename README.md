@@ -629,6 +629,18 @@ Link to the project: https://multiline-chart.lorenzo-lipp.repl.co/
 
 <hr />
 
+## Population Pyramid
+
+- This D3 graph allows you to visualize data with a population pyramid.
+
+Technologies used: Javascript, D3
+
+Link to the project: https://population-pyramid.lorenzo-lipp.repl.co/
+
+![image](./visualize-data-with-a-population-pyramid/images/preview.png)
+
+<hr />
+
 ## Radar Chart
 
 - This ChartJS graph allows you to visualize data with a radar chart.
