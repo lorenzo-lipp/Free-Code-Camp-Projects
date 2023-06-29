@@ -1,676 +1,299 @@
 # Free Code Camp Projects
 
-This repository contains projects that I did while taking the freecodecamp courses and related projects.
+This repository contains projects done while taking the FreeCodeCamp Courses and related projects.
+<br><br>
 
-<hr />
+# Back End
 
-## Exercise Tracker
+## Exercise Tracker: [Javascript, NodeJS, MongoDB, Mongoose]
 
-- This API allows the creating of users and keeping track of exercises assigned to users.
+<img src="./Back%20End/Exercise%20Tracker/images/preview.png" width="40%">
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+## File Metadata: [Javascript, NodeJS]
 
-Technologies used: Javascript, NodeJS, MongoDB, Mongoose
+<img src="./Back%20End/File%20Metadata/images/preview.png" width="40%">
 
-Link to the project: https://exercise-tracker.lorenzo-lipp.repl.co/
+## Header Parser: [Javascript, NodeJS]
 
-![image](./back-end-and-apis-exercisetracker/images/preview.png)
+<img src="./Back%20End/Header%20Parser/images/preview.png" width="40%">
 
-<hr />
+## Sudoku: [CSS, Javascript, NodeJS, React]
 
-## File Metadata
+<img src="./Back%20End/Sudoku/images/preview.png" width="40%">
 
-- This API allows the upload of files to see their metadata.
+## Timestamp: [Javascript, NodeJS]
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+<img src="./Back%20End/Timestamp/images/preview.png" width="40%">
 
-Technologies used: Javascript, NodeJS
+## URL Shortener: [Javascript, NodeJS, MongoDB, Mongoose]
 
-Link to the project: https://file-metadata.lorenzo-lipp.repl.co/
+<img src="./Back%20End/URL%20Shortener/images/preview.png" width="40%">
 
-![image](./back-end-and-apis-filemetadata/images/preview.png)
+<br><br>
 
-<hr />
+# Data Analysis With Python
 
-## Header Parser
+## Demographic Data Analyzer [Python, Pandas]
 
-- This API allows getting user browser information.
+<img src="./Data%20Analysis%20With%20Python/Demographic%20Data%20Analyzer/images/preview.png" width="40%">
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+## Mean Variance Standard Deviation Calculator [Python, Numpy]
 
-Technologies used: Javascript, NodeJS
+<img src="./Data%20Analysis%20With%20Python/Mean%20Variance%20Standard%20Deviation%20Calculator/images/preview.png" width="40%">
 
-Link to the project: https://header-parser.lorenzo-lipp.repl.co/
+## Medical Data Visualizer [Python, Numpy, Pandas, Matplotlib]
 
-![image](./back-end-and-apis-headerparser/images/preview.png)
+<img src="./Data%20Analysis%20With%20Python/Medical%20Data%20Visualizer/images/heatmap.png" width="40%">
 
-<hr />
+## Page View Time Series Visualizer [Python, Numpy, Pandas, Matplotlib, Seaborn]
 
-## Library
+<img src="./Data%20Analysis%20With%20Python/Page%20View%20Time%20Series%20Visualizer/images/box_plot.png" width="40%">
 
-- This API allows you to review and post books.
+## Sea Level Predictor [Python, Numpy, Pandas, Matplotlib]
 
-Technologies used: CSS, Javascript, NodeJS, React, MongoDB, Mongoose
+<img src="./Data%20Analysis%20With%20Python/Sea%20Level%20Predictor/images/sea_level_plot.png" width="40%">
 
-Link to the project: https://library.lorenzo-lipp.repl.co/
+<br><br>
 
-![image](./back-end-and-apis-library/images/preview-1.png)
+# Front End
 
-<hr />
+## 25 + 5 Clock [CSS, Javascript, React]
 
-## Sudoku
+<img src="./Front%20End/25%2B5%20Clock/images/preview.jpg" width="40%">
 
-- This API allows you to get a new sudoku game every refresh.
+## Drum Pad [CSS, Javascript, React]
 
-- The React interface is responsible and has all the features to play the game, marking numbers that aren't part of the solution.
+<img src="./Front%20End/Drum%20Pad/images/preview.jpg" width="40%">
 
-Technologies used: CSS, Javascript, NodeJS, React
+## Javascript Calculator [CSS, Javascript, React]
 
-Link to the project: https://sudoku.lorenzo-lipp.repl.co/
+<img src="./Front%20End/Javascript%20Calculator/images/preview.jpg" width="40%">
 
-![image](./back-end-and-apis-sudoku/images/preview.png)
+## Local Wheater [CSS, Javascript, React]
 
-<hr />
+<img src="./Front%20End/Local%20Wheater/images/preview.jpg" width="40%">
 
-## Timestamp
+## Markdown Previewer [CSS, Javascript, React]
 
-- This API allows to get dates in UTC and unix.
+<img src="./Front%20End/Markdown%20Previewer/images/preview.jpg" width="40%">
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+## Random Quote Machine [HTML, CSS, Javascript, jQuery, Bootstrap]
 
-Technologies used: Javascript, NodeJS
+<img src="./Front%20End/Random%20Quote%20Machine/images/preview.jpg" width="40%">
 
-Link to the project: https://timestamp.lorenzo-lipp.repl.co/
+## Wikipedia Viewer [CSS, Javascript, React]
 
-![image](./back-end-and-apis-timestamp/images/preview.png)
+<img src="./Front%20End/Wikipedia%20Viewer/images/preview.png" width="40%">
 
-<hr />
+<br><br>
 
-## URL Shortener
+# Information Security
 
-- This API allows shortening URLs.
+## Message Board [Javascript, NodeJS, HelmetJS]
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+<img src="./Information%20Security/Message%20Board/images/preview.png" width="40%">
 
-Technologies used: Javascript, NodeJS, MongoDB, Mongoose
+## Port Scanner [Python]
 
-Link to the project: https://url-shortener.lorenzo-lipp.repl.co/
+<img src="./Information%20Security/Port%20Scanner/images/preview.png" width="40%">
 
-![image](./back-end-and-apis-urlshortener/images/preview.png)
+## Real Time Multiplayer Game [Javascript, NodeJS, HelmetJS]
 
-<hr />
+<img src="./Information%20Security/Real%20Time%20Multiplayer%20Game/images/preview.png" width="40%">
 
-## Demographic Data Analyzer
+## SHA-1 Password Cracker [Python, Hashlib]
 
-- This python script analyzes data from a CSV file.
+<img src="./Information%20Security/SHA-1%20Password%20Cracker/images/preview.png" width="40%">
 
-Technologies used: Python, Pandas
+## Stock Checker [Javascript, NodeJS]
 
-Link to the project: https://replit.com/@lorenzo-lipp/Demographic-Data-Analyzer
+<img src="./Information%20Security/Stock%20Checker/images/preview.png" width="40%">
 
-![image](./data-analysis-with-python-demographic-data-analyzer/images/preview.png)
+<br><br>
 
-<hr />
+# JavaScript Algorithms
 
-## Mean Variance Standard Deviation Calculator
+### Bubble Sort
+### Cesars Cipher
+### Cash Register
+### Find The Symmetric Difference
+### Insertion Sort
+### Inventory Update
+### Pairwise
+### Palindrome Checker
+### Quick Sort
+### Roman Numeral Converter
+### Selection Sort
+### Telephone Number Validator
 
-- This python script calculates the sum, variance, standard deviation, max, min, and mean along both axes of a 3x3 matrix and for the flattened matrix.
+<br><br>
 
-Technologies used: Python, Numpy
+# Machine Learning
 
-Link to the project: https://colab.research.google.com/drive/1HFZ-B3R6B9UpO7xHyieWmCBYH-u4fyd8?usp=sharing
+### Book Recommendation Engine [KNN Neighbors]
+### Cat or Dog [Image Classifier]
+### Health Costs Calculator [Linear Regression]
+### SMS Text Classifier [Neural Network]
+### Rock Paper Scissors [Pattern Learning]
 
-![image](./data-analysis-with-python-mean-variance-standard-deviation-calculator/images/preview.png)
+<br><br>
 
-<hr />
+# Project Euler
 
-## Medical Data Visualizer
+|Number|Name|
+|:-----|----|
+|1|Multiples of 3 and 5|
+|2|Even Fibonacci Numbers|
+|3|Largest prime factor|
+|4|Largest palindrome product|
+|5|Smallest multiple|
+|6|Sum square difference|
+|7|10001st prime|
+|8|Largest product in a series|
+|9|Special Pythagorean triplet|
+|10|Summation of primes|
+|11|Largest product in a grid|
+|12|Highly divisible triangular number|
+|13|Large sum|
+|14|Longest Collatz sequence|
+|15|Lattice paths|
 
-- This python script plots a heatmap and a bar chart using data from a CSV file.
+<br><br>
 
-Technologies used: Python, Numpy, Pandas,Matplotlib
+# Quality Assurance
 
-Link to the project: https://replit.com/@lorenzo-lipp/boilerplate-medical-data-visualizer
+## American to British Translator [Javascript, NodeJS, ChaiJS]
 
-![image](./data-analysis-with-python-medical-data-visualizer/images/catplot.png)
-![image](./data-analysis-with-python-medical-data-visualizer/images/heatmap.png)
+<img src="./Quality%20Assurance/American%20to%20British%20English%20Translator/images/preview.png" width="40%">
 
-<hr />
+## Issue Tracker [JavaScript, NodeJS, ChaiJS, MongoDB, Mongoose]
 
-## Page View Time Series Visualizer
+<img src="./Quality%20Assurance/Issue%20Tracker/images/preview.png" width="40%">
 
-- This python script plots a line chart, a bar chart, and a box plot using data from a CSV file.
+## Metric-Imperial Converter [Javascript, NodeJS, ChaiJS]
 
-Technologies used: Python, Numpy, Pandas, Matplotlib, Seaborn
+<img src="./Quality%20Assurance/Metric-Imperial%20Converter/images/preview.png" width="40%">
 
-Link to the project: https://replit.com/@lorenzo-lipp/Page-View-Time-Series-Visualizer
+## Personal Library [JavaScript, NodeJS, ChaiJS, MongoDB, Mongoose]
 
-![image](./data-analysis-with-python-page-view-time-series-visualizer/images/line_plot.png)
-![image](./data-analysis-with-python-page-view-time-series-visualizer/images/bar_plot.png)
-![image](./data-analysis-with-python-page-view-time-series-visualizer/images/box_plot.png)
+<img src="./Quality%20Assurance/Personal%20Library/images/preview.png" width="40%">
 
-<hr />
+## Sudoku Solver [Javascript, NodeJS, ChaiJS]
 
-## Sea Level Predictor
+<img src="./Quality%20Assurance/Sudoku%20Solver/images/preview.png" width="40%">
 
-- This python script plots a graphic predicting the sea level using data from a CSV file.
+<br><br>
 
-Technologies used: Python, Numpy, Pandas, Matplotlib
+# Relational Databases
 
-Link to the project: https://replit.com/@lorenzo-lipp/Sea-Level-Predictor
+## Celestial Bodies Database [PostgreSQL]
 
-![image](./data-analysis-with-python-sea-level-predictor/images/sea_level_plot.png)
+<img src="./Relational%20Databases/Celestial%20Bodies%20Database/images/preview-11.png" width="40%">
 
-<hr />
+## Number Guessing Game [PostgreSQL, Shell Script]
 
-## 25 + 5 Clock
+<img src="./Relational%20Databases/Number%20Guessing%20Game/images/preview.png" width="40%">
 
-- This React application implements a 25 + 5 clock (Pomodoro timer).
+## Periodic Table Database [PostgreSQL, Shell Script]
 
-Technologies used: CSS, Javascript, React
+<img src="./Relational%20Databases/Periodic%20Table%20Database/images/preview-2.png" width="40%">
 
-Link to the project: https://25-5-clock.lorenzo-lipp.repl.co/
+## Salon Appointment Scheduler [PostgreSQL, Shell Script]
 
-![image](./front-end-development-libraries-25%2B5-clock/images/preview.jpg)
+<img src="./Relational%20Databases/Salon%20Appointment%20Scheduler/images/preview-4.png" width="40%">
 
-<hr />
+## World Cup Database [PostgreSQL, Shell Script]
 
-## Drum Pad
+<img src="./Relational%20Databases/World%20Cup%20Database/images/preview-6.png" width="40%">
 
-- This React application emulates a drum pad.
+<br><br>
 
-Technologies used: CSS, Javascript, React
+# Responsive Web Design
 
-Link to the project: https://drum-pad.lorenzo-lipp.repl.co/
+## Personal Portfolio [HTML, CSS, Javascript]
 
-![image](./front-end-development-libraries-drum-pad/images/preview.jpg)
+<img src="./Responsive%20Web%20Design/Personal%20Portfolio/images/preview.jpg" width="40%">
 
-<hr />
+## Product Landing Page [HTML, CSS, Javascript]
 
-## Javascript Calculator
+<img src="./Responsive%20Web%20Design/Product%20Landing/images/preview.jpg" width="40%">
 
-- This React application emulates a calculator.
+## Survey Form [HTML, CSS, Javascript]
 
-Technologies used: CSS, Javascript, React
+<img src="./Responsive%20Web%20Design/Survey%20Form/images/preview.png" width="40%">
 
-Link to the project: https://javascript-calculator.lorenzo-lipp.repl.co/
+## Technical Documentation Page [HTML, CSS, Javascript]
 
-![image](./front-end-development-libraries-javascript-calculator/images/preview.jpg)
+<img src="./Responsive%20Web%20Design/Technical%20Documentation/images/preview.png" width="40%">
 
-<hr />
+## Tribute Page [HTML, CSS, Javascript]
 
-## Local Wheater
+<img src="./Responsive%20Web%20Design/Tribute%20Page/images/preview.png" width="40%">
 
-- This React application consumes an API to show user's local wheater
+<br><br>
 
-Technologies used: CSS, Javascript, React
+# Scientific Computing With Python
 
-Link to the project: https://local-wheater.lorenzo-lipp.repl.co/
+## Arithmetic Formatter [Python]
 
-![image](./front-end-development-libraries-local-wheater/images/preview.jpg)
+<img src="./Scientific%20Computing%20With%20Python/Arithmetic%20Formatter/images/preview.png" width="40%">
 
-<hr />
+## Budget App [Python]
 
-## Markdown Previewer
+<img src="./Scientific%20Computing%20With%20Python/Budget%20App/images/preview.png" width="40%">
 
-- This React application renders a page using markdown text as input.
+## Polygon Area Calculator [Python]
 
-Technologies used: CSS, Javascript, React
+<img src="./Scientific%20Computing%20With%20Python/Polygon%20Area%20Calculator/images/preview.png" width="40%">
 
-Link to the project: https://markdown-previewer.lorenzo-lipp.repl.co/
+## Probability Calculator [Python]
 
-![image](./front-end-development-libraries-markdown-previewer/images/preview.jpg)
+<img src="./Scientific%20Computing%20With%20Python/Probability%20Calculator/images/preview.png" width="40%">
 
-<hr />
+## Time Calculator [Python]
 
-## Random Quote Machine
+<img src="./Scientific%20Computing%20With%20Python/Time%20Calculator/images/preview.png" width="40%">
 
-- This jQuery application fetches an API and gets random quotes, displaying them to the user.
+<br><br>
 
-Technologies used: HTML, CSS, Javascript, jQuery, Bootstrap
+# Visualize Data
 
-Link to the project: https://random-quote-machine.lorenzo-lipp.repl.co/
+## Bar Chart [Javascript, D3]
 
-![image](./front-end-development-libraries-random-quote-machine/images/preview.jpg)
+<img src="./Visualize%20Data/Bar%20Chart/images/preview-1.png" width="40%">
 
-<hr />
+## Choropleth Map [Javascript, D3]
 
-## Wikipedia Viewer
+<img src="./Visualize%20Data/Choropleth%20Map/images/preview-1.png" width="40%">
 
-- This React application allows searching Wikipedia articles.
+## Doughnut Chart [Javascript, ChartJS]
 
-Technologies used: CSS, Javascript, React
+<img src="./Visualize%20Data/Doughnut%20Chart/images/preview-1.png" width="40%">
 
-Link to the project: https://wikipedia-viewer.lorenzo-lipp.repl.co/
+## Heat Map [Javascript, D3]
 
-![image](./front-end-development-libraries-wikipedia-viewer/images/preview.png)
+<img src="./Visualize%20Data/Heat%20Map/images/preview-1.png" width="40%">
 
-<hr />
+## Line Chart [Javascript, D3]
 
-## Message Board
+<img src="./Visualize%20Data/Line%20Chart/images/preview-2.png" width="40%">
 
-- This API allows you to post messages, create threads, and reply to messages.
+## Multiline Chart [Javascript, D3]
 
-- The interface, made by freecodecamp, is simple and intended just for testing.
+<img src="./Visualize%20Data/Multiline%20Chart/images/preview-1.png" width="40%">
 
-Technologies used: Javascript, NodeJS, HelmetJS
+## Population Pyramid [Javascript, D3]
 
-Link to the project: https://message-board.lorenzo-lipp.repl.co
+<img src="./Visualize%20Data/Population%20Pyramid/images/preview.png" width="40%">
 
-![image](./information-security-messageboard/images/preview.png)
+## Radar Chart [Javascript, ChartJS]
 
-<hr />
+<img src="./Visualize%20Data/Radar%20Chart/images/preview-1.png" width="40%">
 
-## Port Scanner
+## Scatterplot Graph [Javascript, D3]
 
-- This python script allows you to scan for unintended open ports on your service, which can become vulnerabilities.
+<img src="./Visualize%20Data/Scatterplot%20Graph/images/preview-1.png" width="40%">
 
-Technologies used: Python
+## Treemap Diagram [Javascript, D3]
 
-Link to the project: https://colab.research.google.com/drive/1s6t-1xjdoDBC5u2Ul6gPCMxUwplJEz0P?usp=sharing
-
-![image](./information-security-port-scanner/images/preview.png)
-
-<hr />
-
-## Real Time Multiplayer Game
-
-- This web socket application allows playing a multiplayer game with whoever connects to the server.
-
-Technologies used: Javascript, NodeJS, HelmetJS
-
-Link to the project: https://real-time-multiplayer-game.lorenzo-lipp.repl.co/
-
-![image](./information-security-secure-real-time-multiplayer-game/images/preview.png)
-
-<hr />
-
-## SHA-1 Password Cracker
-
-- This python script cracks passwords encrypted with SHA-1.
-
-Technologies used: Python, Hashlib
-
-Link to the project: https://replit.com/@lorenzo-lipp/SHA-1-Password-Cracker
-
-![image](./information-security-sha-1-password-cracker/images/preview.png)
-
-<hr />
-
-## Stock Checker
-
-- This API allows you to get data from stock prices.
-
-- The interface, made by freecodecamp, is simple and intended just for testing.
-
-Technologies used: Javascript, NodeJS
-
-Link to the project: https://stock-checker.lorenzo-lipp.repl.co
-
-![image](./information-security-stockchecker/images/preview.png)
-
-<hr />
-
-## American to British Translator
-
-- This node application allows you to translate American to British and vice versa.
-
-- The interface, made by freecodecamp, is simple and intended just for testing.
-
-Technologies used: Javascript, NodeJS, ChaiJS
-
-Link to the project: https://american-british-english-translator.lorenzo-lipp.repl.co/
-
-![image](./quality-assurance-american-british-english-translator/images/preview.png)
-
-<hr />
-
-## Issue Tracker
-
-- This API allows you to create, update and delete issues.
-
-- The interface, made by freecodecamp, is simple and intended just for testing.
-
-Technologies used: JavaScript, NodeJS, ChaiJS, MongoDB, Mongoose
-
-Link to the project: https://issue-tracker.lorenzo-lipp.repl.co/
-
-![image](./quality-assurance-issuetracker/images/preview.png)
-
-<hr />
-
-## Library
-
-- This API allows you to insert new books, comment on books and get the books list.
-
-- The interface, made by freecodecamp, is simple and intended just for testing. 
-
-- You can see it with a better interface at: https://library.lorenzo-lipp.repl.co/
-
-Technologies used: JavaScript, NodeJS, ChaiJS, MongoDB, Mongoose
-
-Link to the project: https://personal-library.lorenzo-lipp.repl.co
-
-![image](./quality-assurance-library/images/preview.png)
-
-<hr />
-
-## Metric-Imperial Converter
-
-- This API converts from the metric system to the imperial system and vice versa.
-
-- The interface, made by freecodecamp, is simple and intended just for testing. 
-
-Technologies used: Javascript, NodeJS, ChaiJS
-
-Link to the project: https://metric-imperial-converter.lorenzo-lipp.repl.co/
-
-![image](./quality-assurance-metricimpconverter/images/preview.png)
-
-<hr />
-
-## Sudoku Solver
-
-- This API receives as input a string with 81 digits (or ".") and solves the sudoku game by filling dots with numbers following sudoku rules.
-
-- The interface, made by freecodecamp, is simple and intended just for testing. 
-
-- You can see it with a better interface at: https://sudoku.lorenzo-lipp.repl.co/
-
-Technologies used: Javascript, NodeJS, ChaiJS
-
-Link to the project: https://sudoku-solver.lorenzo-lipp.repl.co/
-
-![image](./quality-assurance-sudoku-solver/images/preview.png)
-
-<hr />
-
-## Celestial Bodies Database
-
-- This Celestial Bodies database was built using PostgreSQL.
-
-Technologies used: PostgreSQL
-
-![image](./relational-databases-celestial-bodies-database/images/preview-1.png)
-
-<hr />
-
-## Number Guessing Game
-
-- This shell script implements a Number Guessing game and saves user progress to a PostgreSQL database.
-
-Technologies used: PostgreSQL, Shell Script
-
-![image](./relational-databases-number-guessing-game/images/preview.png)
-
-<hr />
-
-## Periodic Table Database
-
-- This Celestial Bodies database was built using PostgreSQL and a shell script to display information.
-
-Technologies used: PostgreSQL, Shell Script
-
-![image](./relational-databases-periodic-table-database/images/preview-2.png)
-
-<hr />
-
-## Salon Appointment Scheduler
-
-- This shell script emulates an appointment scheduler and saves information to a PostgreSQL database.
-
-Technologies used: PostgreSQL, Shell Script
-
-![image](./relational-databases-salon-appointment-scheduler/images/preview-1.png)
-
-![image](./relational-databases-salon-appointment-scheduler/images/preview-4.png)
-
-<hr />
-
-## World Cup Database
-
-- This World Cup database was built using a shell script to insert data from a CSV file into a PostgreSQL database.
-
-Technologies used: PostgreSQL, Shell Script
-
-![image](./relational-databases-world-cup-database/images/preview-6.png)
-
-<hr />
-
-## Personal Portfolio
-
-- This is a responsive web design of a personal portfolio webpage. 
-
-Technologies used: HTML, CSS, Javascript
-
-Link to the project: https://portfolio-page.lorenzo-lipp.repl.co/
-
-![image](./responsive-web-design-personal-portfolio-webpage/images/preview.jpg)
-
-<hr />
-
-## Product Landing Page
-
-- This is a responsive web design of a product landing webpage.
-
-Technologies used: HTML, CSS, Javascript
-
-Link to the project: https://product-landing-page.lorenzo-lipp.repl.co/
-
-![image](./responsive-web-design-product-landing-page/images/preview.jpg)
-
-<hr />
-
-## Survey Form
-
-- This is a responsive web design of a survey form webpage.
-
-Technologies used: HTML, CSS, Javascript
-
-Link to the project: https://survey-form.lorenzo-lipp.repl.co/
-
-![image](./responsive-web-design-survey-form/images/preview.png)
-
-<hr />
-
-## Technical Documentation Page
-
-- This is a responsive web design of a technical documentation webpage.
-
-Technologies used: HTML, CSS, Javascript
-
-Link to the project: https://technical-documentation-page.lorenzo-lipp.repl.co/
-
-![image](./responsive-web-design-technical-documentation-page/images/preview.png)
-
-<hr />
-
-## Tribute Page
-
-- This is a responsive web design of a tribute webpage.
-
-Technologies used: HTML, CSS, Javascript
-
-Link to the project: https://tribute-page.lorenzo-lipp.repl.co/
-
-![image](./responsive-web-design-tribute-page/images/preview.png)
-
-<hr />
-
-## Arithmetic Formatter
-
-- This python script formats arithmetic operations into a more human-readable format.
-
-Technologies used: Python
-
-Link to the project: https://colab.research.google.com/drive/1-z9gFkLNqbgyoJwcJ2IjPB2U6CUmcwkJ?usp=sharing
-
-![image](./scientific-computing-with-python-arithmetic-formatter/images/preview.png)
-
-<hr />
-
-## Budget App
-
-- This python script implements a budget app that keeps track of monetary movements.
-
-Technologies used: Python
-
-Link to the project: https://colab.research.google.com/drive/1MVezhefk-fTfNhqnFYxdprCVzcOPz4XV?usp=sharing
-
-![image](./scientific-computing-with-python-budget-app/images/preview.png)
-
-<hr />
-
-## Polygon Area Calculator
-
-- This python script allows you to calculate a rectangle's area and perimeter.
-
-Technologies used: Python
-
-Link to the project: https://colab.research.google.com/drive/1KD79LZ8xVFq69teX2Kj8-AYk1wZjI_Cw?usp=sharing
-
-![image](./scientific-computing-with-python-polygon-area-calculator/images/preview.png)
-
-<hr />
-
-## Probability Calculator
-
-- This python script allows you to calculate the probability of getting balls from a hat.
-
-Technologies used: Python
-
-Link to the project: https://colab.research.google.com/drive/1-p7n5AjamMAvS1s5JQQ1l-EK6e6YCnzP?usp=sharing
-
-![image](./scientific-computing-with-python-probability-calculator/images/preview.png)
-
-<hr />
-
-## Time Calculator
-
-- This python script allows you to calculate time using a 12-hour clock (AM/PM).
-
-Technologies used: Python
-
-Link to the project: https://colab.research.google.com/drive/15g6LSgovY67nepzV4-QKM5x47k-qxuTx?usp=sharing
-
-![image](./scientific-computing-with-python-time-calculator/images/preview.png)
-
-<hr />
-
-## Bar Chart
-
-- This D3 graph allows you to visualize data with a bar chart.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://bar-chart.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-bar-chart/images/preview-2.png)
-
-<hr />
-
-## Choropleth Map
-
-- This D3 graph allows you to visualize data with a choropleth map.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://choropleth-map.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-choropleth-map/images/preview-1.png)
-
-<hr />
-
-## Doughnut Chart
-
-- This ChartJS graph allows you to visualize data with a doughnut chart.
-
-Technologies used: Javascript, ChartJS
-
-Link to the project: https://doughnut-chart.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-doughnut-chart/images/preview-1.png)
-
-<hr />
-
-## Heat Map
-
-- This D3 graph allows you to visualize data with a heat map.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://heat-map.lorenzo-lipp.repl.co
-
-![image](./visualize-data-with-a-heat-map/images/preview-2.png)
-
-<hr />
-
-## Line Chart
-
-- This D3 graph allows you to visualize data with a line chart.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://line-chart.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-line-chart/images/preview-1.png)
-
-<hr />
-
-## Multiline Chart
-
-- This D3 graph allows you to visualize data with a multiline chart.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://multiline-chart.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-multiline-chart/images/preview-1.png)
-
-<hr />
-
-## Population Pyramid
-
-- This D3 graph allows you to visualize data with a population pyramid.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://population-pyramid.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-population-pyramid/images/preview.png)
-
-<hr />
-
-## Radar Chart
-
-- This ChartJS graph allows you to visualize data with a radar chart.
-
-Technologies used: Javascript, ChartJS
-
-Link to the project: https://radar-chart.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-radar-chart/images/preview-1.png)
-
-<hr />
-
-## Scatterplot Graph
-
-- This D3 graph allows you to visualize data with a scatterplot graph.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://scatterplot-graph.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-scatterplot-graph/images/preview-2.png)
-
-<hr />
-
-## Treemap Diagram
-
-- This D3 graph allows you to visualize data with a treemap diagram.
-
-Technologies used: Javascript, D3
-
-Link to the project: https://treemap-diagram.lorenzo-lipp.repl.co/
-
-![image](./visualize-data-with-a-treemap-diagram/images/preview-1.png)
+<img src="./Visualize%20Data/Treemap%20Diagram/images/preview-1.png" width="40%">
