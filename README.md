@@ -31,6 +31,30 @@ This repository contains projects done while taking the FreeCodeCamp Courses and
 
 <br><br>
 
+# College Algebra With Python
+
+## Data Graph Explorer [Python, Pandas, Matplotlib]
+
+<img src="./College Algebra With Python/Data Graph Explorer/images/preview-2.png" width="60%">
+
+## Financial Calculator [Python]
+
+<img src="./College Algebra With Python/Financial Calculator/images/preview.png" width="60%">
+
+## Graphing Calculator [Python, Pandas, Matplotlib]
+
+<img src="./College Algebra With Python/Graphing Calculator/images/preview-2.gif" width="60%">
+
+## Multi-Function Calculator [Python]
+
+<img src="./College Algebra With Python/Multi-Function Calculator/images/preview.png" width="60%">
+
+## Three Math Games [Python, Matplotlib]
+
+<img src="./College Algebra With Python/Three Math Games/images/preview.png" width="60%">
+
+<br><br>
+
 # Data Analysis With Python
 
 ## Demographic Data Analyzer [Python, Pandas]
