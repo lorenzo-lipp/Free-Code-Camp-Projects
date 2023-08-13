@@ -2,9 +2,7 @@
 
 - This API allows the creating of users and keeping track of exercises assigned to users.
 
-- Since this is a backend pactice, the interface is just for testing and provided by FreeCodeCamp.
-
-Technologies used: Javascript, NodeJS, MongoDB, Mongoose
+Technologies used: Javascript, NodeJS, MongoDB, Mongoose, Bootstrap
 
 # Live Version
 

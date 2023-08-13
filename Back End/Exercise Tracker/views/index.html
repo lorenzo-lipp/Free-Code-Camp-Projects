@@ -4,33 +4,51 @@
     <title>Exercise Tracker | freeCodeCamp</title>
     <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"  type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link href="../public/style.css" rel="stylesheet" type="text/css" /> --> <!-- TODO: CHANGE -->
   </head>
 
-  <body>
-    <div class="container">
-      <h1>Exercise tracker</h1>
-      <form action="/api/users" method="post">
-        <h3>Create a New User</h3>
-        <p><code>POST /api/users</code></p>
-        <input id="uname" type="text" name="username" placeholder="username" />
-        <input type="submit" value="Submit" />
+  <body class="mt-2 mb-3">
+    <h1 class="text-center">Exercise tracker</h1>
+    <div class="container d-flex align-items-center flex-column">
+      <form class="card p-3 mt-3 bg-success-subtle" action="/api/users" method="post" style="width: 265px;">
+        <h3 class="text-center card-title">Create a New User</h3>
+        <p><code class="text-danger text-wrap">POST /api/users</code></p>
+        <input class="input-group mb-3 form-control" id="uname" type="text" name="username" placeholder="username" />
+        <input class="mb-3 btn btn-primary" type="submit" value="Submit" />
       </form>
-      <form id="exercise-form" method="post">
-        <h3>Add exercises</h3>
-        <p><code>POST /api/users/:_id/exercises</code></p>
-        <input id="uid" type="text" name=":_id" placeholder=":_id" />
-        <input id="desc" type="text" name="description" placeholder="description*" />
-        <input id="dur" type="text" name="duration" placeholder="duration* (mins.)" />
-        <input id="date" type="text" name="date" placeholder="date (yyyy-mm-dd)" />
-        <input type="submit" value="Submit" />
+      <form class="card p-3 mt-3 bg-success-subtle" id="exercise-form" method="post" style="width: 265px;">
+        <h3 class="text-center">Add exercises</h3>
+        <p><code class="text-danger text-wrap">POST /api/users/:_id/exercises</code></p>
+        <input class="input-group mb-3 form-control" id="uid" type="text" name=":_id" placeholder=":_id" />
+        <input class="input-group mb-3 form-control" id="desc" type="text" name="description" placeholder="description*" />
+        <input class="input-group mb-3 form-control" id="dur" type="text" name="duration" placeholder="duration* (mins.)" />
+        <input class="input-group mb-3 form-control" id="date" type="text" name="date" placeholder="date (yyyy-mm-dd)" />
+        <input class="mb-3 btn btn-primary" type="submit" value="Submit" />
       </form>
-      <p>
-        <strong>GET user's exercise log: </strong>
-        <code>GET /api/users/:_id/logs?[from][&amp;to][&amp;limit]</code>
-      </p>
-      <p><strong>[ ]</strong> = optional</p>
-      <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+      <div class="card p-3 mt-3 bg-success-subtle" style="width: 265px;">
+        <h3 class="text-center">GET all users</h3>
+        <p><code class="text-danger text-wrap">GET /api/users</code></p>
+        <a href="/api/users"><input class="input-group mb-3 btn btn-primary" type="submit" value="Submit" /></a>
+      </div>
+      <div class="card p-3 mt-3 bg-success-subtle" style="width: 265px;">
+        <h3 class="text-center">GET exercise log</h3>
+        <p><code class="text-danger text-wrap">GET /api/users/:_id/logs[from][&amp;to][&amp;limit]</code></p>
+        <p><strong>[ ]</strong> = optional</p>
+        <p><strong>from, to</strong> = dates (yyyy-mm-dd)</p>
+        <p><strong>limit</strong> = number</p>
+        <input class="input-group mb-3 form-control" id="get-user-id" type="text" name=":_id" placeholder=":_id" required/>
+        <div class="input-group mb-3">
+          <span class="input-group-text">from</span>
+          <input class="form-control" id="get-user-from" type="date" name="from" />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">to</span>
+          <input class="form-control" id="get-user-to" type="date" name="to" />
+        </div>
+        <input class="input-group mb-3 form-control" id="get-user-limit" type="number" name="limit" placeholder="limit" />
+        <button class="mb-3 btn btn-primary" id="get-user-submit">Submit</button>
+      </div>
     </div>
     <script>
       const exerciseForm = document.getElementById("exercise-form");
@@ -40,6 +58,18 @@
         exerciseForm.action = `/api/users/${userId}/exercises`;
 
         exerciseForm.submit();
+      });
+
+      const getUserSubmit = document.getElementById("get-user-submit");
+
+      getUserSubmit.addEventListener("click", () => {
+        const userId = document.querySelector("#get-user-id").value;
+        const from = document.querySelector("#get-user-from").value;
+        const to = document.querySelector("#get-user-to").value;
+        const limit = document.querySelector("#get-user-limit").value;
+
+        if (!userId) return;
+        window.location.href = `${window.location.href}/api/users/${userId}/logs?from=${from}&to=${to}&limit=${limit}`;
       });
     </script>
   </body>
