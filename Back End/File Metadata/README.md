@@ -2,8 +2,6 @@
 
 - This API allows the upload of files to see their metadata.
 
-- Since this is a backend pactice, the interface is just for testing and provided by FreeCodeCamp.
-
 Technologies used: Javascript, NodeJS
 
 # Live Version
